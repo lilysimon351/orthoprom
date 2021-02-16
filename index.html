@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ортопром</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/jquery-3.5.1.min.js" defer></script>
+	<script src="js/slick.min.js" defer></script>
+	<script src="js/app.js" defer></script>
+</head>
+<body>
+
+	<section class="home-page page">
+		<header class="header">
+			<div class="header_mobile d-flex">
+				<div class="header_mobile-item mob-address">
+					<div class="mobile__icon">
+							<span class="iconify" data-icon="mdi:map-marker-radius-outline" ></span>
+						</div>
+				</div>
+				<div class="header_mobile-item mob-phone">
+						<div class="mobile__icon ">
+							<span class="iconify" data-icon="feather:phone-call" data-inline="false" ></span>
+						</div>
+				</div>
+
+				<div class="header_mobile-item mob-menu-btn">
+						<div class="mobile__icon ">
+							<span class="iconify" data-icon="ri:menu-line" data-inline="false"></span>
+						</div>
+				</div>
+				<div class="header_mobile-item mob-appointment">
+						<div class="mobile__icon ">
+							<span class="iconify" data-icon="ri:file-list-3-line" data-inline="false"></span>
+						</div>
+				</div>
+				<div class="header_mobile-item mob-logo">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo/logo.png" alt="Ортопром">
+					</a>
+				</div>
+			</div>
+			<div class="header__top">
+
+				<address class="header__address desktop__item">г. <span class="tt">Краснодар</span>  <br> ул. МОПР, д 55</address>
+				
+				<div class="header__phones phones desktop__item">
+					<a href="tel:+78612001590">8-861-200-15-90</a>
+					<a href="tel:+79014904141">8-901-490-41-41</a>
+				</div>
+				<div class="desktop__item">
+					<a href="index.html" class="header-desktop__logo">
+						<img src="img/logo/logo.png" alt="Ортопром">
+					</a>
+				</div>
+				<div class="timeline desktop__item">
+					График: ПН-ВС
+					<br>
+					с 9-00 до 21-00
+				</div>
+				<button id="header-btn" class="subscribe desktop__item">записаться</button>
+				<div class="mob-subscribe-form">
+					<form action="" class="popup-sign-form d-flex">
+						<div class="popup-close-btn"></div>
+						<div class="popup-sign-form__title">Записаться на приём</div>
+						<div class="popup-form-text">Оставьте свои контакты и <br>
+							получите бесплатную консультацию. <br>
+							Мы обязательно свяжемся с Вами</div>
+							<input type="text" placeholder="Имя">
+							<input type="tel" name="" id="" placeholder="Ваш телефон">
+							<p class="personal-data">
+								<label class="checkbox-container">
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								  </label>
+								  <span> Даю своё согласие на обработку <br> <a href="#">персональных данных</a></span>
+							</p>
+			
+							  <input type="submit" value="записаться" class="popup-submit">
+					</form>
+				</div>
+			</div>
+
+			<nav class="navbar">
+				<ul class="header__menu d-flex">
+					<li class="menu-item">
+						<a href="index.html" class="active">главная</a>
+					</li>
+					<li class="menu-item">
+						<a href="about.html">о нас</a>
+					</li>
+					<li class="menu-item">
+						<a href="services.html">Услуги</a>
+					</li>
+					<li class="menu-item">
+						<a href="specs.html">врачи</a>
+					</li>
+					<li class="menu-item">
+						<a href="news.html">Новости</a>
+					</li>
+					<li class="menu-item">
+						<a href="contacts.html">контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section  class="header__bottom">
+				<div class="container">
+					<h1 class="support_title light-green-title">Господдержка</h1>
+					<div class="compensation">
+						Компенсация до 600.000 руб.  <br> на протезирование от государства
+					</div>
+					<div class="decored-btn-left decored-btn lefted">
+						<button class="more">подробнее</button>
+					</div>
+				</div>
+			</section>
+			<section class="goals">
+				<div class="container">
+					<div class="home-about">
+						<div class="home-about__title green-title">О нас</div>
+						<p class="home-about__text">Специалисты нашего медицинского центра - только профессионалы,<br>
+							регулярно повышающие уровень своей квалификации.<br>
+							Здесь Вас ждут радушный прием, дружественная обстановка,<br>
+							чуткое отношение к Вашим проблемам, и, конечно же,<br>
+							медицинский сервис высочайшего уровня.</p>
+					</div>
+					<div class="purpose">
+						<div class="purpose__title green-title">Цели</div>
+						<p class="purpose__text">Наш медицинский центр предлагает Вам<br>
+							диагностические и лечебные процедуры,<br>
+							которые мы проводим на новейшем и широкофункциональном<br>
+							оборудовании, использование, которого поможет обнаружить<br>
+							заболевание на самой ранней стадии и незамедлительно приступить к лечению. </p>
+					</div>
+					<div class="mission">
+						<div class="mission__title green-title">Задачи</div>
+						<p class="mission__text">Доступность - мы стремимся сделать цены на<br>
+							наши услуги доступными для всех слоев населения,<br>
+							включая студентов и пенсионеров. Кроме этого в нашем<br>
+							медицинском центре периодически проводятся различные акции,<br>
+							предоставляются скидки. Высокая квалификация врачей - основной<br>
+							приоритет медицинского центра. Уже при первом визите<br>
+							вы сможете получить квалифицированную медицинскую<br>
+							помощь, провести необходимые исследования.</p>
+					</div>
+				</div>
+			</section>
+			<section class="upper-limb">
+				<div class="container">
+					<div class="additional-title light-green-title">
+						Чем мы <nobr> помогаем <span class="ques-mark">&#63;</span></nobr>
+					</div>
+					<div class="pos-right">
+						<h2 class="upper-limb__title light-sec-title">
+							Протезы верхних <br> конечностей
+						</h2>
+						<p class="upper-limb__text">
+							Чтобы реализовать различные <br>
+							возможности протезирования при <br>
+							ампутации верхних конечностей, мы предлагаем широкий выбор, <br>
+							проверенных на практике изделий и услуг, которые дают возможность <br>
+							подобрать наилучшие индивидуальное решение для каждого пациента и<br>
+							каждого случая протезирования.
+						</p>
+					</div>
+					<div class="walking-hand">
+						<div class="prosthesis-hand-wr prosthesis-add-wr ">
+							<div class="white-title">Протезы руки, плеча <br> и предплечья</div>
+							<div class="decored-btn prosthesis-hand righted ">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+						<div class="ulimb-wr">
+							<img src="img/main/hand.png" alt="upper limb" class="upper-limb-img">
+						</div>
+						<div class="prosthesis-fingers-wr prosthesis-add-wr">
+							<div class="white-title">Протезы кисти  <br> и пальцев  </div>
+							<div class="decored-btn prosthesis-fingers lefted">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="container">
+					<div class="services__inner d-flex justify-between">
+						<div class="services__item-wr service-mtc-wr">
+							<div class="services__item service-mtc">
+								<h2 class="service__title dark-sec-title">Выдача заключения
+									МТК</h2>
+								<p>Специалисты нашей Медико-Технической Комиссии осмотрят Вас, подробно 
+									расскажут о возможностях 
+									протезирования в каждом конкретном случае и предложат варианты 
+									комплектации протезов, наиболее 
+									отвечающих Вашим потребностям и 
+									пожеланиям. По результатам осмотра Вам будет оформлен Акт МТК для 
+									последующего обращения за 
+									заключением на ремонт протеза или оформления карты ИПР</p>
+							</div>
+							<div class="services__more services__more_right righted">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+						<div class="services__item-wr service-guarantee-wr">
+							<div class="services__item service-guarantee">
+								<h2 class="service__title dark-sec-title">
+									Гарантийный и
+									постгарантийный
+									ремонт протезов</h2>
+								<p>При выполнении требований и рекомендаций по эксплуатации полученного пациентом изделия наши специалисты
+									гарантируют проведение бесплатного ремонта полученных протезов в течение 7 месяцев начиная с даты
+									выдачи. Также наше предприятие  оказывает  услуги по техническому сопровождению любых протезов (техническому
+									обслуживанию, ремонту) в течении всего срока их эксплуатации. В соответствии с ГОСТами и ТУ, по которым изготовлены изделия, срок службы (эксплуатации)
+									составляет 2 года, иногда 3 года</p>
+							</div>
+							<div class="services__more services__more_left lefted">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="lower-limb">
+				<div class="container">
+					<div class="pos-left">
+						<h2 class="lower-limb__title light-sec-title">
+							Протезы нижних  <br> конечностей
+						</h2>
+						<p class="lower-limb__text">
+							При отсутствии нижней конечности используют технические средства, ее замещающие протезы. В настоящее время имеется большое разнообразие протезов, позволяющих осуществить функцию опоры, а также выполнения бытовых и трудовых функций взамен утраченных или отсутствующих конечностей
+						</p>
+					</div>
+					<div class="walking-foot">
+						<div class="prosthesis-hip-wr prosthesis-add-wr">
+							<div class="white-title">Протезы ноги  <br>  и бедра</div>
+							<div class="decored-btn prosthesis-hip lefted">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+						<div class="llimb-wr">
+							<img src="img/main/foot.png" alt="lower limb" class="lower-limb-img">
+						</div>
+						<div class="prosthesis-toe-wr prosthesis-add-wr">
+							<div class="white-title">Протезы голени <br> и ступни</div>
+							<div class="decored-btn prosthesis-toe righted">
+								<button class="more">подробнее</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<section class="consultation">
+				<div class="container">
+					<div class="consultation__inner">
+						<div class="consultation__title dark-title">Есть вопросы?</div>
+						<div class="consultation__text">Запишитесь на <br> <span class="green">бесплатную</span>  консультацию!</div>
+						<div class="consultation__btn subscribe">записаться</div>
+					</div>
+				</div>
+			</section>
+			<section class="why-we">
+				<div class="container">
+					<div>
+						<div class="additional-title dark-title">
+							Почему обращаются <nobr>к нам <span class="ques-mark">&#63;</span></nobr>
+						</div>
+					</div>					
+
+					<ul class="why-we_list">
+						<li class="why-we__item">
+							<div class="cover-text d-flex justify-center align-center">
+								<h3 class="why-we__item-title white-sec-title">Опытные врачи</h3>
+								<div class="why-we__item-text">Профессионализм 
+									медицинского персонала и современный уровень 
+									сервиса при оказании помощи высокого качества позволяют пациентам 
+									получать ощущение 
+									надежности, защищенности и комфорта</div>
+							</div>
+						</li>
+						<li class="why-we__item">
+							<div class="cover-text d-flex justify-center align-center">
+								<h3 class="why-we__item-title white-sec-title">Современное оборудование</h3>
+								<div class="why-we__item-text">Профессионализм медицинского персонала и современный уровень сервиса при оказании помощи высокого качества позволяют пациентам получать ощущение надежности, защищенности и комфорта</div>
+							</div>
+						</li>
+						<li class="why-we__item">
+							<div class="cover-text d-flex justify-center align-center">
+								<h3 class="why-we__item-title white-sec-title">Высокий уровень сервиса</h3>
+								<div class="why-we__item-text">Профессионализм медицинского персонала и современный уровень сервиса при оказании помощи высокого качества позволяют пациентам получать ощущение надежности, защищенности и комфорта</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="specialists">
+				<div class="container">
+					<h2 class="specialists__title dark-title">Наши специалисты</h2>				
+					<div class="specialist-row d-flex justify-between">
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-1.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Свидин <br> Эдуард Сергеевич
+							</div>
+							<div class="specialist__position">Руководитель</div>
+							<div class="specialist__experience"> Опыт 30 лет</div>
+						</div>
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-2.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Коренский <br> Александр Борисович 
+							</div>
+							<div class="specialist__position">Главный инженер-протезист </div>
+							<div class="specialist__experience"> Опыт 30 лет</div>
+						</div>
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-3.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Цвелой <br>  Андрей Николаевич
+							</div>
+							<div class="specialist__position">инженер-протезист</div>
+							<div class="specialist__experience"> Опыт 30 лет</div>
+						</div>
+					</div>			
+					<div class="specialist-row d-flex justify-between">
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-4.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Рыбина <br> Елена Александровна
+							</div>
+							<div class="specialist__position">Врач травматолог-ортопед <br> инженер-протезист </div>
+							<div class="specialist__experience"> Опыт 12 лет</div>
+						</div>
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-5.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Баранов <br>  Григорий Викторович 
+							</div>
+							<div class="specialist__position">Инженер-протезист </div>
+							<div class="specialist__experience">Опыт 12 лет</div>
+						</div>
+						<div class="specialist">
+							<div class="specialist__img-box">
+								<img src="img/experts/specialist-6.png" alt="">
+							</div>
+							<div class="specialist__fullname">
+								Помокаев<br>  Виталий Владимирович
+							</div>
+							<div class="specialist__position">инженер-протезист</div>
+							<div class="specialist__experience"> Опыт 10 лет</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="container">
+					<h2 class="news__title dark-title">Новости</h2>
+					<div class="news-slider-wrapper d-flex">
+						<div class="news-slider">
+								
+							<article class="news__item">
+								<div class="news__item-inner  d-flex justify-center align-center direction-column">
+									<h3 class="news__item-title green-title">Господдержка</h3>
+									<div class="news-text">Компенсация до 600.000 руб. 
+										на протезирование от государства
+										Протез можно получить за личные
+										средства и за бюджетный счет
+										государства, предусмотренный
+										правовым законодательством.</div>
+								</div>
+									<div class="overlay-detailed">
+										<span>Читать статью подробнее</span>	
+									</div>
+							</article>
+														
+							<article class="news__item">
+								<div class="news__item-inner  d-flex justify-center align-center direction-column">
+									<h3 class="news__item-title green-title"> Новые
+										технологии</h3>
+									<div class="news-text">Новейшие технологии в
+										производстве протезов верхних
+										конечностей от одного из ведущих
+										производителей протезно-
+										ортопедической продукции
+										немецкой компании Otto Bock</div>
+								</div>
+								<div class="overlay-detailed">
+									<span>Читать статью подробнее</span>	
+								</div>
+							</article>
+
+							<article class="news__item">
+								<div class="news__item-inner  d-flex justify-center align-center direction-column">
+									<h3 class="news__item-title green-title">Господдержка</h3>
+									<div class="news-text">Компенсация до 600.000 руб. 
+										на протезирование от государства
+										Протез можно получить за личные
+										средства и за бюджетный счет
+										государства, предусмотренный
+										правовым законодательством.</div>
+								</div>
+									<div class="overlay-detailed">
+										<span>Читать статью подробнее</span>	
+									</div>
+							</article>
+														
+							<article class="news__item">
+								<div class="news__item-inner  d-flex justify-center align-center direction-column">
+									<h3 class="news__item-title green-title"> <a href="#" class="news__item-title green-title"> Новые
+										технологии</a></h3>
+									<div class="news-text">Новейшие технологии в
+										производстве протезов верхних
+										конечностей от одного из ведущих
+										производителей протезно-
+										ортопедической продукции
+										немецкой компании Otto Bock</div>
+								</div>
+								<div class="overlay-detailed">
+									<span>Читать статью подробнее</span>	
+								</div>
+							</article>
+
+	
+						</div>
+						<div class="slider-pag-nav">
+							
+							<div class="news-navigation d-flex justify-between">
+								<div class="news-arrow news-button-prev">
+									<span class="iconify" data-icon="el:caret-left" data-inline="false"></span>
+								</div>
+								<div class="news-arrow news-button-next">
+									<span class="iconify" data-icon="el:caret-right" data-inline="false"></span>
+								</div>
+							</div>
+                            
+                            <div class="news-pagination d-flex justify-center"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="seo-text ">
+				<div class="container">
+					<h2 class="green-title">Сео текст</h2>
+					<p>Компенсация до 600.000 руб. 
+						на протезирование от государства
+						Протез можно получить за личные
+						средства и за бюджетный счет
+						государства, предусмотренный
+						правовым законодательством..</p>
+					<p>Компенсация до 600.000 руб. 
+						на протезирование от государства
+						Протез можно получить за личные
+						средства и за бюджетный счет
+						государства, предусмотренный
+						правовым законодательством.</p>
+				</div>
+
+			</div>
+			<section class="contact">
+					<div class="contact__inner d-flex justify-between">
+						<div class="contact-left">
+							<form action="" class="contact-form">
+								<div class="contact-form__title light-green-title">Записаться на приём</div>
+								<p class="contact-inputs-wr d-flex justify-between ">
+									<label for="input-name">
+										<span class="input-label">Ваше имя</span> 
+										<input type="text" id="input-name">
+									</label>
+									<label for="input-phone">
+										<span class="input-label">Ваш телефон</span> 
+										
+										<input type="tel"  id="input-phone">
+									</label>
+								</p>
+								<p>
+									<label for="input-msg">
+										<span class="input-label">Ваше сообщение</span>								
+										<textarea  id="input-msg"></textarea>
+									</label>
+								</p>
+								<p class="contact-bottom">
+									<label class="checkbox-container">
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									  </label>
+									  <a href="#" class="privacy">Согласие на обработку персональных данных</a>
+									  <input type="submit" class="subscribe contact-submit" value="записаться">
+								</p>
+							</form>
+						</div>
+						<div class="contact-right">
+							<h2 class="contact-title dark-title">Наши контакты</h2>
+							<div class="bottom-contacts d-flex">
+								<address class="bottom__address">г. <span class="tt">Краснодар</span>  <br> ул. МОПР, д 55</address>
+								<div class="phones">
+									<a href="tel:+78612001590">8-861-200-15-90</a>
+									<a href="tel:+79014904141">8-901-490-41-41</a>
+								</div>
+								<div class="timeline">
+									График: ПН-ВС
+									<br>
+									с 9-00 до 21-00
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top d-flex justify-between">
+					<div class="privacy-policy">
+						<a href="#">Политика конфиденциальности</a>
+						<span>Публикация материалов с сайта разрешена с письменного согласия </span>
+					</div>
+					<a href="/" class="footer-logo">
+						<img src="img/logo/logo-text.png" alt="logo">
+					</a>
+					<p class="contra">
+						Имеются противопоказания.
+						Обращаясь за услугой,
+						предварительно проконсультируйтесь
+						у наших специалистов
+					</p>
+				</div>
+				<div class="social d-flex justify-center">
+					<a href="#"><span class="iconify" data-icon="la:whatsapp" data-inline="true"></span></a>
+					<a href="#"><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="true"></span></a>
+					<a href="#"><span class="iconify" data-icon="bx:bxl-vk" data-inline="true"></span></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<div class="popup">
+	<div class="popup-sign-up">
+		<form action="" class="popup-sign-form d-flex">
+			<div class="popup-close-btn"></div>
+			<div class="popup-sign-form__title">Записаться на приём</div>
+			<div class="popup-form-text">Оставьте свои контакты и <br>
+				получите бесплатную консультацию. <br>
+				Мы обязательно свяжемся с Вами</div>
+				<input type="text" placeholder="Имя">
+				<input type="tel" name="" id="" placeholder="Ваш телефон">
+				<p class="personal-data">
+					<label class="checkbox-container">
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					  </label>
+					  <span> Даю своё согласие на обработку <a href="#">персональных данных</a></span>
+				</p>
+
+				  <input type="submit" value="записаться" class="popup-submit">
+		</form>
+	</div>
+</div>
+</body>
+</html>

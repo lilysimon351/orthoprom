@@ -1,0 +1,1255 @@
+.prosthesis-add-wr
+    &:after
+        +origin
+.prosthesis-toe-wr::after
+    +origin(left bottom)
+@media screen and ( max-width:  1300px)
+    .purpose__title::before
+        left: 72%
+        top: -136%
+    .purpose__title
+        margin-right: 10%
+    .purpose__title::after
+        width: 60%
+        +rotate(-16deg)
+        right: 20%
+        top: 220%
+    .home-about__title::before
+        width: 184px
+    .container, .header__top, .contact__inner 
+        max-width: 960px
+    .header__menu li a
+        padding-left: 20px
+        padding-right: 20px
+    .walking-hand
+        margin-left: 21%
+    .services__inner 
+        &::before
+            content: none
+    .service-mtc-wr, .service-guarantee-wr
+        &::before
+            width: 130%
+    .service-mtc-wr
+        &::before
+            left: -14%
+    .service-guarantee-wr
+        &::before
+            left: -16%
+    .walking-foot
+        margin-top: 10%
+        margin-left: 35%
+    .consultation__inner
+        &::before
+            background-position-x: 106%
+        &::after
+            left: 59%
+    .why-we__item-title
+        font-size: 25px
+    .specialist__img-box
+        width: 270px
+        height: 270px
+    .specialist
+        width: 40%
+        padding: 0 5px
+    .specialist__fullname
+        font-size: 23px
+    .specialist__img-box img
+        margin-top: -53px
+    .news-navigation .news-button-prev::before, .news-navigation .news-container-rtl .news-button-next::before, .news-navigation .news-button-next::before, .news-navigation .news-container-rtl .news-button-prev::before
+        width: 110px
+    .news-slider .news__item
+        width: 300px 
+    .footer-logo
+        margin-left: 0        
+    .about-content_top
+        background-image:  url(../img/bg/about-bg.jpg) 
+        background-size: 570px
+        background-position: 0 0
+        padding-left: 39%
+        &::before
+            right: -43%
+        &::after
+            left: 42%
+    .about-content_bottom
+        margin-left: 0
+
+    .logo_about
+        left: 11%
+        margin: 0 auto
+        width: 341px
+        img
+            margin: 0
+        &::before
+            left: 85%
+    .about-content_bottom, .about_mission
+        &::before
+            display: none
+    
+    .certificates-slider-wrapper
+        padding: 130px 0
+    .certificates-next-btn
+        left: 50px
+    .certificates-prev-btn
+        left: unset
+        right: 70px
+    .services-intro-content
+        padding-right: 42%
+        background-size: 60% auto
+        &::before
+            left: 93px
+    .service_right
+        width: 335px
+    .ptothesis-types__inner::before, .ptothesis-types__inner::after
+        content: none    
+    .ptothesis-types__inner
+        padding: 0 30px
+
+    .contact-title
+        font-size: 29px
+    .contact-form__title
+        text-align: center
+    .contact-form .contact-inputs-wr
+        margin-left: 0
+
+    .privacy-policy
+        width: 300px
+    .contact
+        background: none
+        font-size: 24px
+        line-height: 100%
+    .contact__inner
+        +flex-column 
+        +justify-center
+        max-width: 100%
+    .contact-right
+        order: -1
+        margin: 0
+        padding: 70px 0
+        background: url(../img/bg/bottom-contact.png) top no-repeat
+        &::before
+            display: none
+
+    .contact-left
+        width: 100%
+        &::before
+            right: -150px
+            width: 1200vw
+    .privacy
+        max-width: 300px
+        width: 100%
+        vertical-align: top
+        margin-left: 0
+    .contact-inputs-wr
+        +flex-column
+        input
+            max-width: 490px
+            width: 100%
+            margin: 0 auto 30px
+            display: block
+    .input-label
+        text-align: center
+    #input-msg
+        display: block
+        margin: 0 auto 50px
+    .contact-form .contact-bottom, 
+    label[for=input-msg] .input-label
+        margin-left: 0
+        text-align: center
+    .contact .contact-submit
+        margin: 20px
+    .detailed-item
+        max-width: 615px
+        padding: 25px
+    
+    .detailed-open::after
+        max-width: 465px
+        bottom: -130px
+        top: unset
+
+    .pos-right, .pos-left
+        float: none
+        margin: 0 auto 90px
+        padding-top: 40px
+        text-align: center
+        width: 90%
+        position: relative
+        top: unset
+    .about-spec::before
+        right: -21%
+    .about-spec__inner::before
+        background-position-y:  0
+        background-size: auto 100%
+        right: -245px
+/* -------------------------------  MEDIA MAX WIDTH  ----------------------------------------------------*/
+@media screen and ( max-width: 1050px  )
+    .container
+        max-width: 960px
+        padding: 0 50px
+
+    .desktop__item, .navbar
+        display: none
+    .small-header
+        position: fixed
+        top: 0
+        background: $text-light
+        width: 100%
+        
+    .header__top
+        +flex-column
+        max-width: 100%
+        padding: 0
+    .header_mobile 
+        border-top: 3px solid $lighter-green 
+        border-bottom: 3px solid $lighter-green
+        margin-top: 25px
+    .header_mobile-item, .mobile__icon, .header__logo
+        text-align: center
+        margin: 0 auto
+        
+    .header_mobile-item:not(.mob-logo)
+        width: 25%
+        cursor: pointer
+        transition: all .3s ease
+        padding: 10px 0
+        &:hover, .mob-active
+            background: $green
+            .mobile__icon
+                border-color: $text-light
+                color: $text-light
+                
+    .mobile__icon
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        color: $text-dark
+        border: 3px solid $text-dark
+        transition: all .3s ease
+        font-size: 50px
+        padding-top: 10px
+    .header__logo
+        border: 3px solid $lighter-green
+        background: $text-light
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        display: block
+        padding-top: 5px
+        img
+            width: 85%
+
+    .mob-logo
+        position: absolute
+        z-index: 3
+        left: 50%
+        transform: translate(-50%,-50%)
+        top: 90%
+        cursor: pointer
+    .mob-phone
+        order: 2
+    .mob-address
+        order: 5
+    .mob-menu-btn
+        order: 1  
+    .mob-appointment
+        order: 4
+    .header__phones, .header__address , .header .timeline
+        text-transform: uppercase
+        width: 100%
+        text-align: center
+        background: #fff
+        font-size: 26px
+        line-height: 35px
+        padding: 35px 10px
+        z-index: 2
+        & br
+            display: none
+    .header__phones
+        padding: 0
+    .header__phones a, .header__menu li a
+            display: block
+            border: 3px solid $lighter-green
+            border-top: none
+            padding: 30px 10px
+    .navbar
+        border: none
+    .header__menu
+        +flex-column
+        text-align: center
+        font-size: 26px
+        & li
+            margin: 0
+    .header__bottom
+        padding: 45px 0
+        background-position: -130px 0, 270px 90%
+        background-size: auto 100%, auto
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background: rgb(29 28 28 / 52%)
+    
+    .small-header
+        .header_mobile-item
+            padding: 2px 0
+        .mobile__icon
+            width: 35px
+            height: 35px
+            font-size: 21px
+            padding-top: 5px
+            border-width: 2px
+        .mob-logo
+            top: 50%
+        .header__logo
+            width: 75px
+            height: 75px 
+    .goals
+        margin-top: 20px
+    .green-title
+        line-height: 100%
+        margin-bottom: 20px
+    .home-about, .mission
+        max-width: 60%
+        width: 100%
+        text-align: left
+    .purpose
+        width: 100%
+        margin-left: 0
+    .purpose__title
+        margin-right: 0
+    .purpose
+        margin-top: 0
+    .mission
+        margin-top: -10px
+    .home-about, .mission
+        max-width: 65%
+
+    .purpose
+        margin-top: 60px
+        br
+            display: none
+    .mission
+        margin: 100px auto 0
+    .mission__title
+        text-align: center
+        &::before
+           left: 65% 
+    .mission__text
+        text-align: center
+        br
+            display: none
+    .home-about__title::after
+        left: 140px
+    .purpose__title::before
+        left: unset
+        right: 130px
+    .home-about__title::before, .purpose__title::after
+        display: none
+    .walking-hand
+        margin-top: 170px
+        margin-bottom: 40px
+    .upper-limb
+        margin-top: 0
+    .upper-limb__title
+        margin-bottom: 20px
+    .prosthesis-hand
+        +lefted
+    .prosthesis-fingers
+        +righted
+        &::before
+            left: unset
+    .prosthesis-hand-wr
+        text-align: left
+        top: -55px
+        left: -80px
+        &:after
+            left: 0
+            bottom: -88px
+            +rotate(19deg)
+    .prosthesis-fingers-wr
+        text-align: right
+        right: unset
+        left: 295px
+        bottom: 30px
+        &::after
+            bottom: 30px
+            right: 20px 
+    .service-mtc-wr, .service-guarantee-wr
+        &::before
+            content: none
+    .services__inner, .services-kind__inner
+        +flex-column
+        +align-center
+    .services__item
+        max-width: 510px
+        width: 100%
+    .services__item-wr, .service-kind__item-wr
+        &::before
+            content: ""
+            width: 300%
+            height: 250px
+            background: $azure
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    .service-mtc
+        border-bottom:  30px solid $green
+        padding-top: 90px
+    .service-guarantee
+        border-top:  30px solid $green
+        &::after
+            bottom: -110px
+        &::before
+            bottom: -70px
+    .service-mtc
+        &::before, &::after
+            +skewY(-35deg)
+            top: -12%
+    .service-mtc
+        &::after
+            top: -18%
+    .services__more_right
+        bottom: 90px
+    .walking-foot
+        margin-left: 24%
+        margin-bottom: 75px
+    .llimb-wr:before
+        left: 40px
+        top: 55px
+    .pos-left
+        margin-bottom: 35px
+    .prosthesis-toe
+        +lefted
+    .prosthesis-hip
+        +righted
+        &::before
+            left: unset
+    .prosthesis-hip-wr
+        top: 29%
+        &::after
+            right: 25px
+            bottom: 30px
+            width: 470px
+            +rotate(21deg)
+        .white-title
+            text-align: right
+    .prosthesis-toe-wr
+        top: 85%
+        left: -25%
+        &::after
+            width: 420px
+            left: 35px
+            bottom: 27px
+            +rotate(-17deg)    
+        .white-title
+            text-align: left
+
+    .consultation
+        padding: 0
+    .why-we
+        background: url(../img/decor/why-we-mobile.png) center no-repeat
+        background-size: 100%
+        padding-top: 50px
+    .why-we_list
+        +flex-wrap
+    .why-we__item
+        max-width: 470px
+        height: 420px
+    .why-we__item:nth-child(2)
+        margin: 20px 0 20px 90px
+    .why-we__item:nth-child(3)
+        margin: 20px 0 20px 25%
+    .cover-text
+        height: 100%
+        background: rgba(2, 109, 98, 0.7)
+    .why-we__item-text
+        display: block
+    .why-we__item-title
+        margin-bottom: 25px
+    .specialists
+        padding-bottom: 0
+    .specialist-row:nth-child(even)
+        margin-bottom: 0
+    .specialist-row
+        +flex-wrap
+        +justify-center
+    .specialist
+        width: 50%
+        margin-bottom: 70px
+    .news__title
+        position: relative
+        text-align: center
+        margin-bottom: 60px
+    .news-slider-wrapper
+        +flex-column
+    .news-slider
+        max-width: 550px
+        width: 100%
+        margin: 0 auto
+        min-height: 500px
+    .slider-pag-nav
+        position: absolute
+        bottom: 0
+        width: 100%
+    .news
+        background-size: auto 340px
+        background-position: 60% 205px
+        &::before
+            +skewX(0deg)
+            left: 0
+            height: 480px
+            top: 135px
+    .news-page .news::before        
+            height: 480px
+    .news-navigation
+        margin-top: -15px
+        &::before
+            z-index: 1
+            top: 0%
+        .news-button-prev, .news-container-rtl  .news-button-next,
+        .news-button-next, .news-container-rtl .news-button-prev
+            width: 115px
+            height: 115px
+            font-size: 50px
+            padding-top: 35px
+            &::before
+               display: none
+    .news-pagination
+        margin-top: -45px
+    .news-slider .news__item
+        width: 550px
+        padding: 70px 35px 165px
+        margin: 0 auto
+    .news-page
+        .news__item.slick-current
+            &::before
+                content: url(../img/decor/news-connect.png)
+                position: absolute
+                top: calc(100% + 3px)
+                left: 50%
+                transform: translateX(-50%) 
+        .news-navigation
+            &::before
+                content: none 
+    .footer__top
+        +flex-column
+    .footer-logo
+        order: -1
+        
+    .footer-logo,  .privacy-policy, .contra
+        width: 100%
+        padding: 30px 10px
+        border-bottom: 3px solid $green
+    /* about*/
+    .about_top
+        background: none
+    .about-content_top
+        padding: 400px 15px 60px
+        background-size: 860px auto
+        background-position: 0 -90px
+        overflow: hidden
+        text-align: left
+        &::before
+            top: 400px
+            left: 0
+            transform: skewY(10deg)
+        &::after
+            content: none
+    .logo_about
+        position: relative
+        left: unset
+        margin: 0 auto
+    .about_bottom br, .about_mission br, .about_mission-title::before, .certificates__title::before
+        display: none
+    
+    .about_mission-title
+        margin-left: 0
+        &::after
+            right: unset
+            left: -120px
+    .about-content_bottom, .about_mission, .certificates
+        margin-top: 40px
+    .about-content_bottom, .about_mission
+        p:nth-of-type(2)
+            &::before
+                content: ""
+                position: absolute
+                background: $light-gray
+                opacity: 0.5
+                width: 200%
+                height: 101%
+                top: -1%
+                left: -30%
+                z-index: -1
+    /* service*/
+    .upper-limb
+        order: 1
+    .service-kinds
+        order: 2
+    .lower-limb
+        order: 3
+    .services-intro
+        margin-top: 70px
+        margin-bottom: 0
+    .services-intro-content
+        padding: 420px 25px 60px
+        border: none
+        text-align: center
+        background-position: center -130px
+        background-size: 900px auto
+        z-index: 2
+        br
+            display: none
+        &::before, &::after
+            top: 360px
+            height: 100%
+            width: 94%
+            left: 3%
+            transform: skewY(11deg)
+            background: #fff
+        &::before
+            border-left: 3px solid #05a897
+            border-right: 3px solid #05a897
+        &::after
+            width: 100%
+            left: 0
+            z-index: -1
+    .service-kinds
+        margin: 0
+        padding: 0
+        
+    .about-spec
+        overflow: hidden
+        &::before
+            top: -40%
+            width:86%
+            left: 7%
+    .about-spec__inner
+        width: 85%
+        margin: 0 auto
+        padding: 135px 0 0
+        &::before
+            background-position: 57% top
+            background-size: 140% auto
+            right: 0
+        &::after
+            left: 0
+            top: 500px
+
+    .about-spec__text-wr
+        width: 100%
+        margin: 0 auto
+        padding: 600px 10px 40px
+        text-align: center
+    .about-spec::before, .about-spec__inner::after, .about-spec__text:after
+        +skewX(0deg) 
+        +skewY(23deg) 
+    .about-spec__text
+        &:before
+            +skewX(0deg) 
+            left: -10px
+            width: 75%
+            height: 100%
+            bottom: -10px
+        &:after
+            display: block
+            left: -10px
+            z-index: -1
+            width: 75%
+            bottom: 105px
+            top: unset
+    .about-spec-sign
+        margin: 40px auto 0
+    .news-hovered, .news__item
+        .overlay-detailed
+            display: none
+    .news-hovered, .news__item:hover
+        .news__item-inner 
+            height: 100%
+            opacity: 1
+    .detailed-item
+        max-width: 650px
+        margin: 0 auto
+        text-align: left
+    .detailed-open::before
+        top: 103%
+        height: 220px
+    .detailed-open::after
+        content: none
+    .news-details
+        margin-bottom: 400px
+        &::after
+            visibility: visible
+            left: 0
+            top: 106%
+    .forums-slider-wrapper 
+        padding-top: 40px
+    .formus__title
+        right: unset
+        width: unset
+        top: -140px
+        br
+            display: initial
+    .forums-slider .slick-track
+        padding-top: 60px
+    .forums-images
+        +align-center
+        +justify-between
+    .forum__image-wrapper:nth-of-type(1)
+        order: 2
+        width: 375px
+        height: 515px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+    .forum__image-wrapper:nth-of-type(2)
+        order: 1
+        margin-left: 0
+        flex-shrink: 0
+    .forum__image-wrapper:nth-of-type(3)
+        width: 290px
+        height: 410px
+        order: 3
+        flex-shrink: 0
+        margin-left: 0
+    .forum-details
+        margin-top: 260px
+    .forums-pagination
+        margin-top: 70px
+    .forums-slider__pag-nav
+        top: 595px
+    .popup-close-btn
+        position: absolute
+        width: 40px
+        height: 40px
+        top: 5px
+        right: 5px
+        cursor: pointer
+        z-index: 1
+        &::after
+            content: "\2716"
+            color: #fff
+            font-size: 40px
+            line-height: 100%
+            font-weight: bold
+    .services-page 
+        .prosthesis-hip-wr, .prosthesis-toe-wr, .prosthesis-hand-wr, .prosthesis-fingers-wr
+            height: 150px
+            &::before                
+                bottom: -30px
+        .prosthesis-hip-wr
+            &::before
+                right: -35px
+                left: unset
+        .prosthesis-toe-wr
+            &::before
+                left: -20px
+        .prosthesis-fingers-wr
+            width: 305px
+            &::before
+                left: unset
+                right: -45px
+        .prosthesis-hand-wr
+            &::before
+               left: -35px
+    .services-intro__text::before
+        content: none
+/*  ---------------------------------------------- ---------------------------------------------------------*/
+@media screen and (max-width: 825px)
+    .walking-hand
+        margin-left: 10%
+    .walking-foot
+        margin-left: 14%
+@media screen and ( max-width:  1050px) and (min-width: 600px)
+    .page, .services__item, .news-text, body, .ptothesis-types
+        font-size: 24px
+        line-height: 100%
+    .light-green-title, .green-title, .dark-title
+        font-size: 50px
+        line-height: 100%
+    .light-sec-title, .dark-sec-title, .white-sec-title
+        font-size: 40px
+        line-height: 100%
+    .compensation, .consultation__text, .bottom-contacts, .footer, 
+    .white-title
+        font-size: 30px
+        line-height: 100%
+    .contact-right::before
+        right: -70%
+    .ques-mark
+        font-size: 80px
+@media screen and ( min-width: 731px  ) and (max-width: 1050px)
+    .prosthesis-hand-wr
+        &:after
+            width: 365px
+
+@media screen and ( max-width: 776px  )
+    .mob-subscribe-form form
+        margin: 0
+        max-width: 100%
+
+    .goals
+        background: url(../img/decor/goals-mobile.png) 60% 40px no-repeat, url(../img/decor/about-mobile.png) 15% center no-repeat
+        background-size: auto, cover
+    .mission
+        max-width: 100%
+    .purpose__title::before, .home-about__title::after, .mission__title::before
+        display: none
+    .consultation__inner
+        padding: 340px 0 50px 
+        margin-top: 20px
+        text-align: center
+        overflow: hidden
+        &::before
+            width:100%
+            background-color:  none
+            background-position: 60% 0
+            opacity: 1
+            left: 0
+            top:0
+        &::after
+            left: 0
+            top: unset
+            bottom: -50%
+            +skewY(10deg)
+    .consultation__title
+        margin-bottom: 50px
+    .consultation__text
+        margin-bottom: 60px
+    .specialist__fullname
+        font-size: 35px
+        line-height: 100%
+    .specialist-row
+        +flex-column
+        &::before
+            content: none
+    .specialist
+        width: 100%
+        &::before
+            content: ""
+            position: absolute
+            height: 170px
+            width: 230vw
+            background: #7c7d80
+            top: 60px
+            left: -50%
+    .about-spec 
+        padding-bottom: 0
+    .news-navigation
+        width: 100%
+        
+    .certificates-slider-wrapper
+        padding: 90px 0
+    .ptothesis__type
+        &::before
+            transform: skewX(-35deg)
+            left: unset
+            right: 15%
+        &::after
+            transform: translateY(0)
+            top: unset
+            bottom: 0
+            left: unset
+            right: -35px
+
+    .third-type, .forth-type
+        text-align: right
+        &::before
+            left: 15%
+            transform: skewX(35deg)
+        &::after
+            right: unset
+            left: -35px
+    .popup-sign-up
+        background: rgba(37, 38, 44, 0.7)
+        .popup-submit
+            +btn($width: 250px)
+        .popup-sign-form 
+            max-width: 100%
+            &::after
+                content: "\2716"
+                position: absolute
+                width: 40px
+                height: 40px
+                color: #fff
+                top: 5px
+                right: 5px
+                font-size: 40px
+                line-height: 100%
+                font-weight: bold
+                cursor: pointer
+
+    .header__bottom
+        background-image: url(../img/bg/left-part-mob.png),  url(../img/bg/support.jpg)
+        background-position: left top, 27% bottom 
+        background-size: 100% auto, auto 65%
+        height: 1115px
+    
+    .about-content_top
+        background-size: 730px auto
+        padding-top: 300px
+        &::before
+            top: 300px
+    .services-intro-content
+        background-size: 700px auto
+    .services-intro-content
+        padding-top: 320px
+        &::before, &::after
+            top: 260px
+@media screen and ( max-width: 750px  ) and (min-width: 731px)
+    
+    .logo_about
+        margin-left: 5%
+    .logo_about::before
+        content: url(../img/decor/hard-bg.png)
+        left: 85%
+        top: -90px
+    .about-content_bottom, .about_mission
+        margin-top: 80px
+        margin-left: 10px
+    .certificates
+        margin-top: 40px
+    .about_mission-title::after, .certificates__title::after
+        display: none
+    .about_mission-title
+        margin-left: 0
+    
+    .about-content_bottom p:nth-of-type(2)::before, .about_mission p:nth-of-type(2)::before
+        display: none
+@media screen and ( max-width: 730px  )
+    .header__bottom
+        height: 1000px
+    .walking-hand
+        margin: 0 auto
+        padding: 160px 0 200px 0
+    .prosthesis-hand-wr
+        top: 0
+        left:0
+        &:after
+            left: -55px
+            bottom: -193px
+            +rotate(40deg)
+    .prosthesis-fingers-wr
+        left: 65px
+        &:after
+            width: 400px
+            +rotate(47deg)
+    .prosthesis-hip-wr
+        right: 8px
+        top: -20%
+        &::after
+            width: 315px
+            +rotate(-16deg)
+    .prosthesis-toe-wr
+        left: 0
+        top: unset
+        bottom: -35%
+        &::after
+            width: 315px
+            left: 35px
+            bottom: 32px
+            +rotate(-43deg)
+    .walking-foot
+        margin: 175px 0 195px  55px
+        width: 435px
+    .pos-left
+        margin-bottom: 70px
+    .about-spec__inner
+        padding: 70px 0 0
+        &::after
+            top: 400px
+    .about-spec__text-wr
+        padding-top: 500px
+    .news
+        background-position: 60% 220px
+        background-size: auto
+    .about_mission__inner
+        padding: 0 10px 20px
+    
+    .about-content_bottom p:nth-of-type(2)::before, .about_mission p:nth-of-type(2)::before
+        display: block
+    .certificates__title::after
+        display: none
+    .certificates
+        background: url(../img/decor/why-we-mobile.png) center no-repeat
+    .forums-navigation
+        +flex-wrap
+        +justify-center
+    .forums-pagination
+        display: none!important
+    .forums-slider__pag-nav
+        top: 565px
+    .forums-slider .slick-track
+        padding-top: 0
+    .forum__image-wrapper:nth-of-type(1)
+        position: relative
+        height: unset
+    .forum__image-wrapper:nth-of-type(2),
+    .forum__image-wrapper:nth-of-type(3)
+        display: none
+@media screen and ( max-width: 600px )
+    
+    .header__bottom
+        height: 624px
+        background-position: left -150px, 15% bottom
+        background-size: 100% auto, auto
+    .services__item-wr
+        &::before
+            content: none
+    .services__item
+        font-size: 24px
+
+    .container
+        padding: 0 15px
+    .mobile__icon
+        width: 60px
+        height: 60px
+        font-size: 35px
+    .header__logo
+        width: 40px
+        height: 40px
+        padding: 0
+    .small-header 
+        .header_mobile-item:not(.mob-logo):hover, .header_mobile-item:not(.mob-logo) .mob-active
+            background: initial        
+        .header_mobile-item:not(.mob-logo):hover .mobile__icon, .header_mobile-item:not(.mob-logo) .mob-active .mobile__icon
+            border-color: $green
+            color: $green
+        .header__logo 
+            width: 65px
+            height: 65px
+        .mobile__icon
+            margin:0
+        .mob-menu-btn
+            padding-left: 10px
+        .mob-address
+            padding-right: 10px
+        .mob-address, .mob-appointment
+            &  .mobile__icon
+                float: right
+    .mob-logo
+        top: 100%
+    .popup-sign-form
+        padding: 15px
+    .popup-sign-form__title
+        font-size: 28px
+    .popup-form-text
+        font-size: 17px
+    .header__address ,.header  .timeline, .header__phones a, .header__menu li a
+        padding: 20px 10px
+        font-size: 20px
+    .header__bottom 
+        .decored-btn
+            margin: 60px 0
+    .home-page
+        font-size: 20px
+        line-height: 100%
+    .goals
+        background: url(../img/bg/about-mobile.png) center no-repeat
+    .mission__title
+        margin-left: 0
+        text-align: center
+    .purpose, .mission
+        margin-top: 45px
+    .home-about
+        max-width: 100%
+    .prosthesis-hand-wr
+        top: 15px
+    .prosthesis-hip-wr
+        top: -16%
+        &::after
+            width: 300px
+    .news
+        margin-top: 0
+        background: none
+    .home-page 
+        .news
+            margin-bottom: -65px
+    .why-we__item
+        max-width: 95%
+        height: unset
+    .why-we__item, .why-we__item:nth-child(2), .why-we__item:nth-child(3)
+        margin: 20px auto
+    .cover-text
+        position: relative
+        min-height: 320px
+    .slider-pag-nav
+        bottom: 100px
+    .contact-left
+        width: 100%
+        padding: 30px 15px
+    .walking-foot
+        margin-left: 5%
+        width: 420px
+    .specialist__fullname
+        font-size: 23px
+        line-height: 100%
+    .logo_about
+        width: 200px
+        &::before
+            left: 105%
+            top: -45px
+    .about-content_bottom, .about_mission, .certificates
+        margin-top: 0
+    .services-intro
+        margin-top: 30px
+
+    .about-spec__text-wr
+        padding-top: 440px
+    .about-spec__text:after
+        bottom: 65px
+
+    .contact input, .contact textarea
+        transform: skew(0deg)
+    .input-label
+        margin-left: 0
+    .contact .contact-submit
+        margin: 20px 0
+    #input-msg
+        width: 100%
+    .contact-left::before
+        right: -275px
+    .news-page .news
+        &::before
+            background: $azure        
+        .slider-pag-nav
+            bottom: 180px
+    .news-details::after
+        width: 90%
+    .news-details
+        margin-bottom: 200px
+    .formus__title
+        position: relative
+        top: unset
+    .services-intro-content
+        background-position: -110px -110px
+    .services-page 
+        .prosthesis-hip-wr, .prosthesis-toe-wr, .prosthesis-hand-wr, .prosthesis-fingers-wr
+            height: 136px
+    .news::before
+        top: 70px
+@media screen and ( max-width: 475px )
+    .light-green-title, .green-title,  .dark-title
+        font-size: 30px
+
+    .light-sec-title, .dark-sec-title, .white-sec-title
+        font-size: 25px
+
+    .header__bottom
+        height: 600px
+        background-position: left -120px, -218px bottom
+        background-size: 100% auto, 925px
+    .popup-sign-form__title, .popup-form-text, .popup-sign-form input[type=text], .popup-sign-form input[type=tel],.popup-sign-form p.personal-data
+        margin-bottom: 20px
+    p.personal-data
+        padding-left: 40px
+    .services__item, .service-kind__item
+        padding: 30px 5px 150px
+        background: $lighter-green
+        font-size: 16px
+        border-top: 15px solid $green
+        border-bottom: 15px solid $green
+        &::before
+            content: none
+        &::after
+            +rotate(0)
+    .services__more_right
+        right: 25px
+        bottom: 40px
+    .services__more_left
+        left: 25px
+        bottom: 40px
+    .prosthesis-toe-wr, .prosthesis-hip-wr
+        &::after
+            content: none
+    .llimb-wr
+        &::after, &::before
+            content: none
+            
+    .ques-mark
+        font-size: 55px
+    .consultation__inner
+        padding-top: 100px
+        &::before
+            content: none
+        &::after
+            bottom: -27%
+    .news-slider .news__item
+        padding: 70px 20px 165px
+    .news-navigation
+        &::before
+            display: none
+    .home-page .news-pagination
+        margin-top: 0
+    .slider-pag-nav
+        position: relative
+    .social a
+        margin: 0 15px
+    .pos-right, .pos-left
+        margin-bottom: 70px
+    .walking-hand
+        width: unset
+        img
+            display: block
+            margin: 0 auto
+    .ulimb-wr
+        width: unset
+        &:before, &:after
+            content: none
+    .prosthesis-hand-wr, .prosthesis-fingers-wr
+        &:after
+            content: none
+    .prosthesis-fingers-wr
+        left: -15px
+        right: 0
+    .walking-foot
+        max-width: 420px
+        width: 100%
+        margin: 245px auto 200px
+    .llimb-wr
+        +rotate(16deg)
+        width: 110%
+        margin-left: -7%
+    .prosthesis-hip-wr
+        top: -200px
+    .prosthesis-toe-wr
+        left: 0
+        bottom: -170px
+    .specialist__fullname
+        max-width: 220px
+        margin: 0 auto 40px
+        text-align: center
+        white-space: initial
+        word-break: break-word
+    .about-spec::before, .about-spec__inner
+        width: 100%
+        left: 0
+    .about-spec__inner::after
+        top: 320px
+    .about-spec__text-wr
+        padding-top: 375px
+    .about-content_top
+        background-size: 450px auto
+        background-position: 0 0
+        padding-top: 270px
+        &::before
+            top: 250px
+    .certificates-next-btn
+        left: -15px
+    .certificates-prev-btn
+        right: -15px
+    .news-page .news .slider-pag-nav
+        position: absolute
+    .forums-slider__pag-nav
+        position: relative
+        top: unset
+        margin-top: 20px
+    .forum-details
+        margin-top: 30px
+    .service-kind__item
+        padding-bottom: 30px
+    .contact-right
+        background-position: 45%

@@ -1,0 +1,123 @@
+@import '_vars'
+
+=circle($width, $color, $is-centered: true)
+    content: ""
+    width: $width
+    height: $width
+    background: $color
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+=btn($padding: 10px 20px, $fz: 12px, $width: 165px, $bg-color: $green, $text-color: $text-light)
+    display: inline-block
+    border: 3px solid $bg-color
+    background: $bg-color
+    border-radius: 50px
+    text-decoration: none
+    cursor: pointer
+    color: $text-color
+    text-transform: uppercase
+    font-size: $fz
+    font-family: "Montserrat", sans-serif
+    font-weight: bold
+    line-height: 1.214
+    padding:  $padding
+    width: $width
+    transition: all .3s ease
+    &:hover
+        text-decoration: none
+        background: $text-color
+        color: $bg-color
+    @media screen and ( max-width:  1050px)
+        width: 250px
+        padding: 15px 30px
+        font-size: 20px
+
+=decorative-btn($decor-bg: rgba(24, 64, 65, 0.89), $btn-bg: $green, $btn-decor-bg: $lighter-green, $lefted: true )
+    &::before
+        +circle(115px, $decor-bg, false)
+        opacity: .7
+    & .more
+        +btn($bg-color: $btn-bg)
+        &::after
+            +circle(20px, $btn-decor-bg)
+=lefted
+    &::before
+        left: -35px
+    & .more
+        text-align: right
+        &::after
+            left: 7%
+    @media screen and (max-width: 1050px)        
+        & .more
+            &::after
+                left: 5%
+=righted
+    &::before
+        right: -35px
+    & .more
+        text-align: left
+        &::after
+            right: 7%
+            left: unset
+    @media screen and (max-width: 1050px)
+    
+        & .more
+            &::after
+                left: 87%
+                right: 5%
+=rotate($deg)
+    -webkit-transform: rotate($deg)
+    -ms-transform: rotate($deg)
+    -moz-transform: rotate($deg)
+    transform: rotate($deg)
+
+=origin($pos: right bottom)
+    -webkit-transform-origin: $pos
+    -ms-transform-origin: $pos
+    -moz-transform-origin: $pos
+    transform-origin: $pos
+
+=skewY($deg)
+    -webkit-transform: skewY($deg)
+    -ms-transform: skewY($deg)
+    transform: skewY($deg)
+=skewX($deg)
+    -webkit-transform: skewX($deg)
+    -ms-transform: skewX($deg)
+    transform: skewX($deg)
+=title($color, $fz: 36px, $fw: 800)
+    color: $color
+    font-size: $fz
+    font-weight:  $fw
+    line-height: 100%
+    margin: 0 0 30px
+       
+=d-flex
+    display: -webkit-box!important
+    display: -ms-flexbox!important
+    display: flex!important
+
+=flex-wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+
+=flex-column
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+=justify-center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+=justify-between
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+=align-center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
